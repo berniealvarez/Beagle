@@ -17,7 +17,7 @@
       </div>
         
         <div class="nav-list">
-            <li><a href="default.asp"><i class="material-icons">filter_none</i>Exercises</a></li>
+            <li><a href="default.asp"><i class="material-icons">filter_none</i><u style="text-decoration-color:#D0598B">Exercises</u></a></li>
             <li><a href="news.asp"><i class="material-icons">pan_tool</i>Support</a></li>
             <li><a href="contact.asp"><i class="material-icons">notifications</i>Notification</a></li>
             <li><a href="about.asp"><i class="material-icons">person</i>Profile</a></li>
@@ -28,44 +28,56 @@
 <div class="row text">
   <div><h1>Active Exercises</h1></div>
   <div>
-      <button class="btn"><i class="material-icons">dashboard</i>Cards</button>
+      <button class="btn cards-button"><i class="material-icons">dashboard</i>Cards</button>
       <button class="btn"><i class="material-icons">list_alt</i>List</button>
   </div>
  
 </div>
 <section class="cards">
-    <div class="row activeExercise">
-        <div class="column cardHuman">
-            <div class="container">
-                <img src="Images/human.png" alt="human">
-                <!-- <button class="btn">Button</button> -->
-              </div>
-            <div class="container">
-              <h4><b>Human Body and Organ Systems</b></h4>
-              <p><i>Start: Sept 21, 2019</i></p>
-              <p><i>Due: Sept 23, 2019</i></p>
-              <p><i>Remaining: 3 steps</i></p>
-              <button class="go">Start Exercise</button>
-            </div>
-          </div>
-    
-          <div class="column cardDna">
-              <div class="container">
-                  <img src="Images/dna.png" alt="dna">
-                  <!-- <button class="btn">Button</button> -->
+    <div class="row">
+        <div class="activeExercise">
+            <div class="column card">
+                <div class="container human">
+                    <img src="Images/human.jpeg" alt="human">
+                    <!-- <button class="btn">Button</button> -->
+                  </div>
+                <div class="containerBody">
+                  <h4>Human Body and Organ Systems</h4>
+                  <p><i>Start: Sept 21, 2019</i></p>
+                  <p class="due"><i>Due: Sept 23, 2019</i></p>
+                  <p class="remaining"><i>Remaining: 3 steps</i></p>
+                  <button class="go">Start Exercise</button>
                 </div>
-              <div class="container">
-                  <h4><b>DNA Structure and Genetic Disorder</b></h4>
-                  <p><i>Start: Sept 17, 2019</i></p>
-                  <p><i>Due: Sept 25, 2019</i></p>
-                  <p><i>Remaining: 2 steps</i></p>
-                <button class="go">Resume Exercise</button>
               </div>
-            </div>
+        
+              <div class="column card">
+                  <div class="container dna">
+                      <img src="Images/dna.jpeg" alt="dna">
+                      <!-- <button class="btn">Button</button> -->
+                    </div>
+                  <div class="containerBody">
+                      <h4>DNA Structure and Genetic 
+                        Disorder</h4>
+                      <p><i>Start: Sept 17, 2019</i></p>
+                      <p class="due"><i>Due: Sept 25, 2019</i></p>
+                      <p class="remaining"><i>Remaining: 2 steps</i></p>
+                    <button class="go">Resume Exercise</button>
+                  </div>
+                </div>
+        </div>
+         
+          <div class="arrow">
+              <i class="material-icons">
+                  arrow_forward_ios
+                  </i>
+          </div>
     </div>
-</section>
 
+</section>
+<div class="w3-border">
+  <div class="w3-grey" style="height:24px;width:20%"></div>
+</div>
       
-  <script src="js/scripts.js"></script>
+
 </body>
 </html>
